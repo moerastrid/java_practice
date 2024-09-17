@@ -1,0 +1,34 @@
+For each of the following Java code fragments, 
+say whether it causes a compile-time error, a run-time error, or no error. 
+If there is an error, explain why.  
+   1. int A[5];
+
+   2. int [] A, B;
+      B = 0;
+
+   3. int [] A = {1,2,3};
+      int [] B;
+      B = A;
+
+   4. int [] A;
+      A[0] = 0;
+
+   5. int [] A = new int[20];
+      int [] B = new int[10];
+      A = B;
+      A[15] = 0;
+
+ANSWERS (uit hoofd):
+1. no error
+2. error: B not initialized
+3. no error
+4. run-time error: A not initialized
+5. run-time error: out of bounds
+
+
+ANSWERS (after tests):
+1. compile-time error: ']' expected
+2. compile-time error: incompatible types, int to int[]
+3. no error
+4. compile-time error: variable might not have been initialized
+5. run-time error: outOfBoundException

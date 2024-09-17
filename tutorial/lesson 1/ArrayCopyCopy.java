@@ -26,6 +26,5 @@ public class ArrayCopyCopy {
 		for(int i = 0; i < A.length; i++) {
 			print_array(A[i]);
 		}
-
 	}
 }
