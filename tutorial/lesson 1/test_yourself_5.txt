@@ -32,3 +32,6 @@ ANSWERS (after tests):
 3. no error
 4. compile-time error: variable might not have been initialized
 5. run-time error: outOfBoundException
+
+NOTES:
+1. Compile-time error: Can't specify array dimension in a declaration. This is C/C++ syntax.

@@ -18,7 +18,6 @@ public class Sum {
 		System.out.println("The sum is: " + sum);
 
 		sum = 0;
-		i = 0;
 		for (int j = 1; j <= 10; j++) {
 			sum += j;
 			// System.out.println("j: " + j);

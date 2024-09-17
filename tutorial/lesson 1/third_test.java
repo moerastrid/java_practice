@@ -72,7 +72,7 @@ public class third_test {
 		System.out.print("\n");
 	}
 
-	private static int count_zeroes(int [] A) {
+	private static int count_nonzeroes(int [] A) {
 		int count = 0;
 
 		for (int i = 0; i < A.length; i++){
@@ -85,7 +85,7 @@ public class third_test {
 	public static int[] NonZeros( int [] A ) {
 		if (A == null)
 			return (null);
-		int count = count_zeroes(A);
+		int count = count_nonzeroes(A);
 		int [] result;
 		result = new int [count];
 
