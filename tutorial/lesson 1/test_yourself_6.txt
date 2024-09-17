@@ -1,0 +1,16 @@
+ Fill in the table below as follows:
+
+    If the declaration will compile as is, put a check in the second column, and write the value of the declared variable in the last column.
+    If the declaration will not compile as is, but can be made to compile by adding an explicit cast, rewrite the declaration with the correct explicit cast in the third column, and write the value of the declared variable in the last column.
+    If the declaration will not compile, and cannot be fixed by adding an explicit cast, put a check in the fourth column. 
+
+The first row has been filled in as an example.
+
+Declaration 	Correct 	Rewrite with cast 	Never correct 	Variable's value
+double d = 5; 		X												5.0
+int k = 5.6;				int k = (int)5.6						5
+long x = 5.4;				long x = (long)5.4						5
+short n = 99999;			short n = (short)99999					-31073
+int b = true;										X
+char c = 97;		X
+short s = -10.0;			short s = (short)-10.0					-10
