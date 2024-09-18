@@ -1,0 +1,48 @@
+Question 1: see folder "myfirstpackage"
+
+Question 2:
+
+
+
+// Question 2: Consider the following function.
+
+//     static void f(int k, int[] A, String S) {
+//         int j = 1 / k;
+//         int len = A.length + 1;
+//         char c;
+        
+//         try {
+//             c = S.charAt(0);
+//             if (k == 10) j = A[3];
+//         } catch (ArrayIndexOutOfBoundsException ex) {
+//             System.out.println("array error");
+//     	throw new InternalError();
+//         } catch (ArithmeticException ex) {
+//             System.out.println("arithmetic error");
+//         } catch (NullPointerException ex) {
+//             System.out.println("null ptr");
+//         } finally {
+//             System.out.println("in finally clause");
+//         }
+//         System.out.println("after try block");
+//     }
+
+// Part A.
+
+//     Assume that variable X is an array of int that has been initialized to be of length 3. For each of the following calls to function f, say what (if anything) is printed by f, and what, if any, uncaught exceptions are thrown by f.
+
+//     A. f(0, X, "hi");
+//     B. f(10, X, "");
+//     C. f(10, X, "bye");
+//     D. f(10, X, null); 
+
+// Part B.
+
+//     Why doesn't f need to have a throws clause that lists the uncaught exceptions that it might throw? 
+
+
+
+
+
+
+// ANSWERS:
