@@ -1,7 +1,25 @@
-Question 1: see folder "myfirstpackage"
+Answer 1: see folder "myfirstpackage"
 
-Question 2:
+Answer 2:
+part 1:
+A:	uncaught exception: ArithmeticException
+B: 	array error
+	in finally clause
+	uncaught exception: InternalError
+C:	array error
+	in finally clause
+	uncaught exception: InternalError
+D:	null ptr
+	in finally clause
 
+part 2:
+	because it's not not catching checked errors?
+
+CORRECTED:
+	FORGOT IT GOES TO 'AFTER TRY BLOCK' AFTER IT FINISHED THE WHOLE TRY/CATCH THING WITHOUT THROWING ERRORS
+	DID NOT THINK THE STRING "" WOULD BE OUT OF BOUNDS BECAUSE I EXPECTED TERMINATING \0 LIKE IN C
+	
+	PART 2: BECAUSE ITS UNCKECKED ERRORS
 
 
 // Question 2: Consider the following function.
