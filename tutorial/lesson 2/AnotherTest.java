@@ -40,8 +40,7 @@
 
 // question 2: 
 // je kunt een string niet zien als een chararray in Java, dus string[0] werkt niet, je moet .charAt gebruiken.
-// while(c) snapt hij niet. 
-
+// while(c) snapt hij niet. Er is ook geen index? 
 
 
 class Solution {
