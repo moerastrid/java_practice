@@ -1,10 +1,10 @@
-class List {
+class OldList {
 	private static final int	INIT_LEN = 4;
 	private Object []			items;
 	private int					numItems = 0;
 	public int					currentObject;
 
-	public List() {
+	public OldList() {
 		items = new Object [INIT_LEN];
 	}
 
@@ -64,15 +64,15 @@ class List {
 	}
 	
 	public static void main(String[] args) {
-		List testList = new List();
-		String [] testinput = {"appel", "peer", "taart", "banaan", "1", "2", "3", "4", "5", "", "", "", "aardbei"};
+		OldList testList = new OldList();
+		String [] testinput = {"appel", "peer", "taart", "banaan", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "", "", "", "aardbei"};
 		for (int i = 0; i < testinput.length; i++) {
 			testList.AddToEnd(testinput[i]);
 		}
 		testList.Print();
 		System.out.println('\n');
 
-		List L = new List();
+		OldList L = new OldList();
 		for (int i = 0; i < args.length; i++) {
 			L.AddToEnd(args[i]);
 		}
