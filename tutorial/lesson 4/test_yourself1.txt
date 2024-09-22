@@ -1,0 +1,25 @@
+ Assume the following class has been defined:
+
+    class Point {
+        protected int x, y;
+        
+        // no-arg constructor
+        public Point() {
+            x = y = 0;
+        }
+        
+        // constructor with 2 args
+        public Point(int a, int b) {
+            x = a;
+    	y = b;
+        ]
+    }
+
+Define a class ColorPoint that:
+
+    is a subclass of the Point class
+    has a (protected) field of type String called color (in addition to fields x and y)
+    has 3 public constructors:
+        0 args: x and y are set to 0; color is set to "red";
+        2 int args: x and y are set to the given values; color is set to "red"
+        2 int args and 1 String arg: x, y, and color are set to the given values 
