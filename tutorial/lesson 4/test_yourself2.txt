@@ -1,0 +1,47 @@
+answer1:	(10, 20)
+	WRONG! WAS (20, 30)! PARAMS IN JAVA ARE PASSED BY VALUE
+	(NO STORAGE WAS ALLOCATED, IT'S JUST A POINTER)
+(at this point I realized I forgot to read the theory, oops)
+
+answer2a:
+	class Point {
+		private int x, y;
+		
+		public String toString() {
+			return "(" + x + ", " + y + ")";
+		}
+
+		public void SetPoint(int a, int b) {
+			x = a;
+			y = b;
+		}
+
+		public Object clone() {
+			try {
+				Point tmp = (Point)super.clone();
+				return tmp;
+			} catch (CloneNotSupportedException ex) {
+				throw new InternalError(ex.toString());
+			}
+		}
+
+		public static void main(String[] args) {
+			Point p1 = new Point();
+			p1.SetPoint(10, 20);
+			Point p2 = (Point)p1.clone();
+			p1.SetPoint(20, 30);
+			System.out.println(p2);
+		}
+	}
+
+answer2b:	(10, 20)
+answer3:
+	public Object clone() {
+		try {
+			Point tmp = (Point)super.clone();
+			tmp.coords = (int [])coords.clone();
+			return tmp;
+		} catch (CloneNotSupportedException ex) {
+			throw new InternalError(ex.toString());
+		}
+	}
